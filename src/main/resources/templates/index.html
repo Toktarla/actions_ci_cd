@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Addition Application</title>
+</head>
+<body>
+<h2>Addition Application</h2>
+<form action="#" th:action="@{/add}" method="post">
+    <label for="number1">Number 1:</label>
+    <input type="text" id="number1" name="number1" required><br><br>
+
+    <label for="number2">Number 2:</label>
+    <input type="text" id="number2" name="number2" required><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+
+<br>
+
+
+</body>
+</html>
