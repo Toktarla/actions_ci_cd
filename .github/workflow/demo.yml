@@ -1,7 +1,0 @@
-name: Deploy Project
-on: windows_latest
-
-jobs:
-  print:
-    -name: Print Something
-    run: echo "Toktar"

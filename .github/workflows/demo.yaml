@@ -1,9 +1,18 @@
 name: Deploy Project
 on: [workflow_dispatch,push]
 jobs:
-  print:
+  test:
     runs-on: windows-latest
     steps:
-      - name: Print to console
-        run: echo Hello World
+      - name: Test
+        run: mvn test
+      - name: Build
+        run: mvn clean install
+      - name: Lint
+        run: |
+          mvn pmd:check
+          mvn verify
+      - name: Deploy
+        run: echo "Deploying..."
+
       
