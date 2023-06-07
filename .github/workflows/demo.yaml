@@ -2,7 +2,7 @@ name: Deploy Project
 on: [workflow_dispatch,push]
 jobs:
   print:
-    runs-on: windows_latest
+    runs-on: windows-latest
     steps:
       - name: Print to console
         run: echo Hello World
